@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stivenduque.resistor.MainResistor"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/resistor"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color 1:"
+            android:id="@+id/TV1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Spinner
+            android:id="@+id/SpnColor1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/TV1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color 2"
+            android:id="@+id/textView"
+            android:layout_below="@+id/SpnColor1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:id="@+id/SpnColor2"
+            android:spinnerMode="dialog"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color 3"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/SpnColor2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/SpnColor3"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color 4"
+            android:id="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/SpnColor3" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:id="@+id/SpnColor4"
+            android:layout_below="@+id/textView3"
+            android:spinnerMode="dialog"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:id="@+id/BtnCalculateIt"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/SpnColor4"
+            android:layout_alignEnd="@+id/SpnColor4"
+            android:background="@color/salmon"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
