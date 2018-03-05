@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.stivenduque.resistor.MainResistor"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/aqua">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -99,19 +100,18 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Calcular"
-            android:id="@+id/BtnCalculateIt"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignRight="@+id/SpnColor4"
-            android:layout_alignEnd="@+id/SpnColor4"
-            android:background="@color/salmon"/>
 
     </LinearLayout>
-
+    <Button
+        android:id="@+id/BtnCalculateIt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/SpnColor4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/SpnColor4"
+        android:background="@color/salmon"
+        android:text="Calcular" />
 
 </LinearLayout>
